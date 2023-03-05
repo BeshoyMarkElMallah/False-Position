@@ -11,14 +11,12 @@ xu = float(input("Enter the upper limit: "))
 while error > 0.001:
     
     fxl = m.pow((m.pow(xl, 2)+1), 2)-25
-    print("The value of f(xl) is: ", fxl)
     fxu = m.pow((m.pow(xu, 2)+1), 2)-25
-    print("The value of f(xu) is: ", fxu)
     xr_new = ((xu*fxl)-(xl*fxu))/(fxl-fxu)
-    print("The root is: ", xr_new)
+
     
     fxr = m.pow((m.pow(xr_new, 2)+1), 2)-25
-    print("The value of f(xr) is: ", fxr)
+
 
     mul_fxl_fxr = fxl*fxr
     
